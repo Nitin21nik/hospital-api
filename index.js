@@ -1,5 +1,5 @@
 const express=require("express");//using express
-const port=8000; //defining the port number on which the server runs
+const port=process.env.PORT || 8000; //defining the port number on which the server runs
 
 const passport=require('passport');//requiring passport for authentication and authorization
 const jwtPassportStrategy=require('./config/passport-jwt-strategy');//importing the jwt strategy
